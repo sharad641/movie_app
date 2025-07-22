@@ -1,0 +1,77 @@
+.home-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.search-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  flex: 1 1 300px;
+  padding: 10px 15px;
+  border: 2px solid #aaa;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: border 0.3s;
+}
+
+.search-input:focus {
+  border-color: #007bff;
+}
+
+.search-button,
+.clear-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.clear-button {
+  background-color: #dc3545;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+
+.clear-button:hover {
+  background-color: #a71d2a;
+}
+
+.favorites-count {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.movies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.no-movies {
+  text-align: center;
+  font-size: 18px;
+  color: #777;
+}
+
+.loading {
+  text-align: center;
+  font-size: 18px;
+  color: #555;
+}
